@@ -46,9 +46,9 @@ const AzumaOptions = {
 };
 const azuma = new Azuma(join(__dirname, 'YourBaseCluster.js'), KurasutaOptions, AzumaOptions);
 // If you need to access the Kurasuta Sharding Manager, example, you want to listen to shard ready event
-walther.manager.on('shardReady', id => console.log(`Shard ${id} is now ready`));
+azuma.manager.on('shardReady', id => console.log(`Shard ${id} is now ready`));
 // Call spawn from azuma, not from kurasuta
-walther.spawn();
+azuma.spawn();
 ```
 
 ## Pro Tip
