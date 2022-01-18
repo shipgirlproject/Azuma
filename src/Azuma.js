@@ -83,11 +83,11 @@ class Azuma extends EventEmitter {
      */
     async spawn() {
         if (isPrimary) {
-            while(this.manager.ipc.server.status !== 0) await Util.delayFor(1);
+            while(this.manager.ipc.server.status !== 0) await sleep(1);
             await this.manager.ipc.server.close();
             this.manager.ipc.server.removeAllListeners();
             this.manager.ipc = new AzumaIPC(this.manager);
-            while(this.manager.ipc.server.status !== 0) await Util.delayFor(1);
+            while(this.manager.ipc.server.status !== 0) await sleep(1);
             this.ratelimits = new AzumaManager(this);
             const tasks = Structures.getBeforeSpawn();
             if (tasks.length) await Promise.all(tasks.map(task => task(this.manager)));
@@ -99,6 +99,10 @@ class Azuma extends EventEmitter {
         cluster.client.rest = new RequestManager(cluster.client);
         await cluster.init();
     }
+}
+
+function sleep(delay) {
+    return new Promise(resolve => setTimeout(resolve, delay*1000));
 }
 
 export default Azuma;
