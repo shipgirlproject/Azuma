@@ -18,7 +18,11 @@ A package that actually syncs your ratelimits across all your clusters on Discor
 
 ## NOTE
 
+> This library is now in "Maintenance" phase. I'm not gonna add new features on it. I'll just fix issues if there is but that's as far as I'll go.
+
 > You need to use [Kurasuta](https://github.com/DevYukine/Kurasuta) to make this work as this package depends on it
+
+> This is planned to use `@discordjs/sharder` once it's ready. That's the last update and marks the v4 release
 
 > v1.x.x initial release (Latest in 1x branch is version: 1.1.0)
 
@@ -33,14 +37,6 @@ A package that actually syncs your ratelimits across all your clusters on Discor
 ## Documentation
 
 > https://deivu.github.io/Azuma/?api
-
-## TODO
-
-* Support for `options.invalidRequestWarningInterval`
-
-* Support for `options.restGlobalRateLimit`
-
-* Support for `options.rejectOnRateLimit`
 
 ## Support
 > https://discord.gg/FVqbtGu `#development` channel

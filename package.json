@@ -1,6 +1,6 @@
 {
   "name": "azuma",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "A package that actually syncs your ratelimits across all your clusters on Discord.JS",
   "type":"module",
   "main": "index.js",
@@ -27,9 +27,9 @@
     "node"
   ],
   "dependencies": {
-    "@sapphire/async-queue": "^1.1.7",
+    "@sapphire/async-queue": "^1.2.0",
     "cheshire": "github:Deivu/Cheshire#2.0.2",
     "discord.js": ">=13.0.0",
-    "kurasuta": "^3.0.1"
+    "kurasuta": ">=3.0.1"
   }
 }
