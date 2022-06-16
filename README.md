@@ -7,6 +7,11 @@ A package that actually syncs your ratelimits across all your clusters on Discor
   <img src="https://azurlane.netojuu.com/w/images/4/42/Azuma.png">
 </p>
 
+## EOL 
+> Discord.JS started developing their "proxy" module, marking the end of EOL of this package. Use that instead
+
+> Link: https://github.com/discordjs/discord.js/tree/main/packages/proxy
+
 ## Features
 
 ✅ An easy drop in solution for those who wants globally synced ratelimits
@@ -82,7 +87,4 @@ class Example extends Client {
 ```
 > WARNING: DO NOT CHANGE OR RUN ANY FUNCTION FROM THE PARAMETERS. It's designed to be used as read-only values
 
-## Example Bot
-https://github.com/Deivu/Kongou
-
-> Based from my Handling from `@Kashima`, Made with ❤ by @Sāya#0113
+> Based from my old handling from `@Kashima`, Made with ❤ by @Sāya#0113
